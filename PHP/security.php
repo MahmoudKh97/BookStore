@@ -1,0 +1,28 @@
+<?php
+if(isset($_POST["PASSWORD"]) ){
+	$_POST["PASSWORD"] = "Tmjlz" . $_POST["PASSWORD"];
+	$_POST["PASSWORD"] = md5($_POST["PASSWORD"]);
+}
+
+if(isset($_POST["CONFIRM_PASSWORD"]) ){
+	$_POST["CONFIRM_PASSWORD"] = "Tmjlz" . $_POST["CONFIRM_PASSWORD"];
+	$_POST["CONFIRM_PASSWORD"] = md5($_POST["CONFIRM_PASSWORD"]);
+}
+
+if(isset($_POST["OLD_PASSWORD"]) ){
+	$_POST["OLD_PASSWORD"] = "Tmjlz" . $_POST["OLD_PASSWORD"];
+	$_POST["OLD_PASSWORD"] = md5($_POST["OLD_PASSWORD"]);
+}
+
+if(isset($_POST["NEW_PASSWORD"]) ){
+	$_POST["NEW_PASSWORD"] = "Tmjlz" . $_POST["NEW_PASSWORD"];
+	$_POST["NEW_PASSWORD"] = md5($_POST["NEW_PASSWORD"]);
+}
+
+if(isset($_POST["CONFIRM_NEW_PASSWORD"]) ){
+	$_POST["CONFIRM_NEW_PASSWORD"] = "Tmjlz" . $_POST["CONFIRM_NEW_PASSWORD"];
+	$_POST["CONFIRM_NEW_PASSWORD"] = md5($_POST["CONFIRM_NEW_PASSWORD"]);
+}
+
+
+?>
